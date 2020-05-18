@@ -1,0 +1,9 @@
+<div>
+    <h5>Litchfield Home Page Directory</h5>
+    <ul>
+        <li *ngFor='let link of links' [class.noDot] = 'link.type != "link"'>
+            <a *ngIf='link.type=="link"' [href]='link.url'>{{ link.name }}</a>
+            <h6 *ngIf='link.type=="heading"'>{{ link.name }}</h6>
+            <br *ngIf='link.type==="space"' /></li>
+    </ul>
+</div>

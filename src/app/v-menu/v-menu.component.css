@@ -1,0 +1,20 @@
+div {
+    width: 300px;
+    padding: 3px;
+    border: solid;
+    border-color: black;
+    border-radius: 3px;
+    background-color: yellow;
+}
+
+ul {
+    list-style-image: url('/assets/images/blue.gif');
+}
+
+.noDot {
+    list-style: none;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
