@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +8,27 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
 @Input() menuOn: boolean;
+@Output() menuOnChange = new EventEmitter();
+localMenuOn: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.localMenuOn = this.menuOn
   }
 
   menuToggle() {
-    this.menuOn = !this.menuOn;
+    this.localMenuOn = !this.localMenuOn;
+    this.menuOnChange.emit(this.localMenuOn);
+  }
+
+  mouseEnter() {
+    // if (!this.localMenuOn) {
+    //   this.menuOnChange.emit(true);
+    // }
+  }
+
+  mouseLeave() {
+    // this.menuOnChange.emit(this.localMenuOn);
   }
 }

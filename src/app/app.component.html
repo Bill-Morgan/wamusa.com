@@ -1,14 +1,14 @@
 <div class='container-fluid'>
   <div class='row'>
     <div class='col-sm-12'>
-      <app-header></app-header>
+      <app-header [(menuOn)] = 'menuOn'></app-header>
     </div>
   </div>
   <div class='row'>
     <div class='col'>
       <app-downtown-cam></app-downtown-cam>
     </div>
-    <div *ngIf = 'menuOn' class='col-sm-3 right'>
+    <div *ngIf = 'menuOn' class='col-sm-3'>
       <app-v-menu></app-v-menu>
     </div>
   </div>
