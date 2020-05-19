@@ -4,7 +4,7 @@
             <img src='/assets/images/banners/wam.gif' />
         </div>
         <div class='col-sm-12 right'>
-            <button (click)='menuToggle()'>{{ menuOn ? 'Menu Off' : 'Menu On' }}</button>
+            <button (mouseenter)='mouseEnter()' (mouseleave)='mouseLeave()' (click)='menuToggle()'>{{ localMenuOn ? 'Menu Off' : 'Menu On' }}</button>
         </div>
     </div>
 </div>

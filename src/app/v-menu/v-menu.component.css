@@ -1,5 +1,5 @@
 div {
-    width: 300px;
+    width: 250px;
     padding: 3px;
     border: solid;
     border-color: black;
@@ -12,10 +12,13 @@ ul {
     text-align: left;
 }
 
+li.heading {
+    color: black;
+}
 .noDot {
     list-style: none;
 }
 
-h4 {
+h6 {
     margin-bottom: 0px;
 }
