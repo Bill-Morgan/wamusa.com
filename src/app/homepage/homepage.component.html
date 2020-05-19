@@ -1,0 +1,22 @@
+<div>
+    <a href="https://www.wunderground.com/webcams/WU_4888913/1/show.html">
+        <img id="downtown" alt="" [src]="picURL" height="270" width="480" /></a>
+    <p>Live picture of North State Street, Litchfield (Updated:
+        <span>{{ timeStamp }}</span>)
+    </p>
+    <br />
+    <button *ngIf='updateEnabled' (click)='stopUpdate()'>Stop Update</button>
+    <button *ngIf='!updateEnabled' (click)='startUpdate()'>Start Update</button>
+</div>
+<div class='center'>
+    <a href="https://montgomeryco.com/health/Public%20Health/Coronavirus.html">
+        <h4>Montgomery County Health Department COVID-19 Update</h4>
+    </a>
+    <br /><br />
+</div>
+<app-buy-computer></app-buy-computer>
+<br />
+<div class='center'>
+    <img src='/assets/images/secure.jpg' />
+</div>
+<br />

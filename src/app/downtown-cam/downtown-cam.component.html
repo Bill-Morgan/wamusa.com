@@ -1,8 +1,0 @@
-<div>
-    <a href="https://www.wunderground.com/webcams/WU_4888913/1/show.html">
-    <img id="downtown" alt="" [src]="picURL" height="270" width="480" /></a>
-    <p>Live picture of North State Street, Litchfield (Updated: 
-        <span>{{ timeStamp }}</span>)</p>
-    <button *ngIf = 'updateEnabled' (click) = 'stopUpdate()'>Stop Update</button>
-    <button *ngIf = '!updateEnabled' (click) = 'startUpdate()'>Start Update</button>
-</div>

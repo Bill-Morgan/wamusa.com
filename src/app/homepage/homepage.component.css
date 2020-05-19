@@ -1,0 +1,19 @@
+div {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    border-width:   0px;
+}
+
+table {
+    background-color: burlywood;
+    text-align: center;
+    border: 1px;
+    border-color: black;
+}
+
+#gsearch {
+    text-align: center;
+}

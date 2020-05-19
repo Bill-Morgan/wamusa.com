@@ -3,11 +3,11 @@ import * as moment from 'moment';
 import { Subscription, interval } from 'rxjs';
 
 @Component({
-  selector: 'app-downtown-cam',
-  templateUrl: './downtown-cam.component.html',
-  styleUrls: ['./downtown-cam.component.css']
+  selector: 'app-homepage',
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.css']
 })
-export class DowntownCamComponent implements OnInit, OnDestroy {
+export class HomepageComponent implements OnInit, OnDestroy {
 
   timeStamp: string;
   picURL: string;

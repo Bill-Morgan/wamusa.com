@@ -1,4 +1,4 @@
-div {
+#box {
     width: 250px;
     padding: 3px;
     border: solid;
@@ -21,4 +21,14 @@ li.heading {
 
 h6 {
     margin-bottom: 0px;
+}
+
+#antigun, #sailorsstory {
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.ss-link {
+    margin: auto;
 }

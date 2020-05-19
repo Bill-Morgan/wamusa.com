@@ -1,4 +1,4 @@
-<div>
+<div id='box'>
     <h5>Litchfield Home Page Directory</h5>
     <ul>
         <li *ngFor='let link of links' [class.noDot] = 'link.type != "link"'>
@@ -6,4 +6,22 @@
             <h6 *ngIf='link.type=="heading"' class='heading'>{{ link.name }}</h6>
             <br *ngIf='link.type==="space"' /></li>
     </ul>
+    <div id='antigun'>
+        <img src='assets/images/PostedLogo.png' />      
+    </div>
+    <br />
+    <div id='sailorsstory' class='container'>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <img src='assets/images/ensP.jpg' width="82" height="106" />
+            </div>
+            <div class='col ss-link'>
+                <a href='http://www.wamusa.com/?p=sstory'>Sailer's Story</a>
+                <p>by LTJG. Ryan Petrosky</p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <iframe scrolling="no" frameborder="0" width="240" height="240" 
+        src="http://rk.revolvermaps.com/w/1/a/a.php?i=ak3ay5l4375&amp;s=240&amp;m=0&amp;v=false&amp;r=true&amp;b=000000&amp;n=false&amp;c=ff0000"></iframe>
 </div>

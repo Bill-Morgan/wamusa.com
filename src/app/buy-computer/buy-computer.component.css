@@ -1,0 +1,13 @@
+div {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    background-color: whitesmoke;
+    border-color: black;
+    border-style: double;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
