@@ -1,0 +1,14 @@
+<div class='container'>
+  <div class='row'>
+    <div>
+      <button (click)='toggleMenu()'>Menu {{displayButton ? "<" : ">"}}</button>
+    </div>
+    <div *ngFor='let link of links'>
+      <span (mouseenter)='mouseEnter(link.heading)' (mouseleave)='mouseLeave(link.heading)'>
+        <button *ngIf='displayButton'>{{ link.heading }}</button>
+        <br />
+        <app-dd-menu class='ddmenu' *ngIf='displayMenu[link.heading]' [menuItems]='link.links'></app-dd-menu>
+      </span>
+    </div>
+  </div>
+</div>

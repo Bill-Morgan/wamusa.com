@@ -9,26 +9,23 @@ export class HeaderComponent implements OnInit {
 
 @Input() menuOn: boolean;
 @Output() menuOnChange = new EventEmitter();
-localMenuOn: boolean;
+buttonMouseOver = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.localMenuOn = this.menuOn
   }
 
   menuToggle() {
-    this.localMenuOn = !this.localMenuOn;
-    this.menuOnChange.emit(this.localMenuOn);
+    this.menuOn = !this.menuOn;
+    this.menuOnChange.emit(this.menuOn);
   }
 
   mouseEnter() {
-    // if (!this.localMenuOn) {
-    //   this.menuOnChange.emit(true);
-    // }
+    this.buttonMouseOver = true;
   }
 
   mouseLeave() {
-    // this.menuOnChange.emit(this.localMenuOn);
+    this.buttonMouseOver = false;
   }
 }

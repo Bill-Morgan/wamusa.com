@@ -1,11 +1,21 @@
 <div id='box'>
     <h5>Litchfield Home Page Directory</h5>
-    <ul>
+    <div *ngFor='let link of links'>
+        <br />
+        <p>{{ link.heading }}</p>
+        <ul>
+            <li *ngFor='let each of link.links'>
+                <a [href]='each.url'>{{ each.name }}</a>
+            </li>
+        </ul>
+    </div>
+    <!-- <ul>
         <li *ngFor='let link of links' [class.noDot] = 'link.type != "link"'>
             <a *ngIf='link.type=="link"' [href]='link.url'>{{ link.name }}</a>
-            <h6 *ngIf='link.type=="heading"' class='heading'>{{ link.name }}</h6>
-            <br *ngIf='link.type==="space"' /></li>
-    </ul>
+            <span *ngIf='link.type=="heading"' class='heading'>{{ link.name }}</span>
+            <br *ngIf='link.type==="space"' />
+        </li>
+    </ul> -->
     <div id='antigun'>
         <img src='assets/images/PostedLogo.png' />      
     </div>

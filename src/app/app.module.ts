@@ -8,6 +8,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { GsearchComponent } from './gsearch/gsearch.component';
 import { BuyComputerComponent } from './buy-computer/buy-computer.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { McCovid19Component } from './alerts/mc-covid19/mc-covid19.component';
+import { HMenuComponent } from './h-menu/h-menu.component';
+import { DdMenuComponent } from './h-menu/dd-menu/dd-menu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { BuyComputerComponent } from './buy-computer/buy-computer.component';
     HomepageComponent,
     HeaderComponent,
     GsearchComponent,
-    BuyComputerComponent
+    BuyComputerComponent,
+    AlertsComponent,
+    McCovid19Component,
+    HMenuComponent,
+    DdMenuComponent
   ],
   imports: [
     BrowserModule

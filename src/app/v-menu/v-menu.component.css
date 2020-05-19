@@ -12,8 +12,9 @@ ul {
     text-align: left;
 }
 
-li.heading {
+.heading {
     color: black;
+    font-size: larger;
 }
 .noDot {
     list-style: none;
@@ -31,4 +32,9 @@ h6 {
 
 .ss-link {
     margin: auto;
+}
+
+p {
+    padding-left: 15px;
+    padding-bottom: 0px;
 }
