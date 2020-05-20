@@ -1,0 +1,42 @@
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='col-sm-3'>
+            <img src='assets/images/litchfieldsign.gif'>
+        </div>
+        <div class='col white'>
+            <p>A friendly community located in Central Illinois, Litchfield has the best of everything. From the busy
+                downtown business district o the beautiful recreational areas, Litchfield has it all!</p>
+            <p>St. Francis Hospital, many small factories, farms and abundant retail stores provide employment
+                opportunities to the residents. Litchfield benefits from a wide range of affordable housing, from newly
+                built subdivisions to the stately older homes.</p>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col white'>
+            <p>Lake Lou Yaeger is a popular attraction for visitors from all over the country. This 1500 acre lake
+                features boating, swimming, fishing, camping and much more.</p>
+            <p>Litchfield community is equally proud of its schools. With the recent addition of Lincoln Land Community
+                College to the town, educational opportunities are available to everyone.
+            </p>
+        </div>
+    </div>
+    <div class='row center'>
+        <div class='col-sm-4'></div>
+        <div class='col-sm-4 white border'>
+            <br />
+            <p>Ask anyone in town, the most valuable<br />
+                resource in Litchfield is its people!</p>
+            <p class='x-large'>City of Litchfield Contact Information</p>
+            <p>Litchfield's Government Home Page: <a
+                    href='http://www.cityoflitchfieldil.com'>www.cityoflitchfieldil.com</a></p>
+            <br /><br />
+            <p>City Contact Information (217 Area Code):</p>
+            <table cellSpacing=1 cellPadding=1>
+                <tr *ngFor='let each of cityDirectory'>
+                    <td class='left'> {{ each['name'] }} </td>
+                    <td class='right'> {{ each['phone'] }} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

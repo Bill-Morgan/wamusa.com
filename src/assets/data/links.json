@@ -31,7 +31,7 @@
             },
             {
                 "name": "Obituaries",
-                "url": "http://www.wamusa.com/?p=obits.htm"
+                "url": "/obits"
             },
             {
                 "name": "Veterans' Memorial Project",
@@ -67,7 +67,7 @@
             },
             {
                 "name": "City of Litchfield",
-                "url": "http://www.wamusa.com/wam.asp?p=litchfield"
+                "url": "/litchfield"
             },
             {
                 "name": "Local Businesses",

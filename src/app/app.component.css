@@ -2,4 +2,17 @@ body {
     background: 'assets/images/usflagbk.jpg';
 }
 
+.header {
+    top: 0px;
+    height: 250px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.content {
+    margin: 270px auto;
+    padding: 15px;
+}
+
 

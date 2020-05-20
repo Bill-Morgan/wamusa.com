@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { AbsoluteSourceSpan } from '@angular/compiler';
-// import { link } from 'fs';
-
+import * as data from '../../assets/data/links.json'
+import { Links } from '../core/links';
 @Component({
   selector: 'app-h-menu',
   templateUrl: './h-menu.component.html',
@@ -14,6 +13,7 @@ export class HMenuComponent implements OnInit {
   viewFlag = false;
   displayMenu: boolean[] = [];
 
+  // links: Links[];
   links = [ {
     heading: 'WAM Computers', url: 'http://www.wamcomputers.com',
     links: [ 
@@ -25,7 +25,7 @@ export class HMenuComponent implements OnInit {
     links: [
       {name:'Home', url: '/'},
       {name:'Search Engines', url: 'http://www.wamusa.com/wam.asp?p=search'},
-      {name: 'Obituaries', url: 'http://www.wamusa.com/?p=obits.htm'},
+      {name: 'Obituaries', url: '/obits'},
       {name: "Veterans' Memorial Project", url: 'http://www.wamusa.com/vetmemorial/'},
       {name: 'Litchfield Public Library', url: 'http://www.litchfieldpubliclibrary.org/'},
       {name: 'Litchfield Schools', url: 'https://www.lcusd12.org/'},
@@ -34,7 +34,7 @@ export class HMenuComponent implements OnInit {
       {name: 'Litchfield Airport', url: 'http://www.wamusa.com/airport/'},
       {name: 'Local Motels and Restaurants', url: 'http://airport.litchfieldil.com/Motel-Restaurant%20Locations.htm'},
       {name: 'Now Playing @ Local Theaters', url: 'http://www.wamusa.com/wam.asp?p=skyview'},
-      {name: 'City of Litchfield', url: 'http://www.wamusa.com/wam.asp?p=litchfield'},
+      {name: 'City of Litchfield', url: '/litchfield'},
       {name: 'Local Businesses', url: 'http://www.wamusa.com/wam.asp?p=business'},
       {name: 'Recreation', url: 'http://www.wamusa.com/wam.asp?p=recreation'},
       {name: 'Church Services', url: 'http://www.wamusa.com/wam.asp?p=churches'},
@@ -57,7 +57,7 @@ export class HMenuComponent implements OnInit {
     ]}
   ]
 
-  constructor() { 
+  constructor() {
   }
 
   ngOnInit(): void {
@@ -65,8 +65,7 @@ export class HMenuComponent implements OnInit {
     this.links.forEach(link => {
       this.displayMenu[link.heading] = false;
     });
-    console.log(JSON.stringify(this.links));
-
+    // console.log(JSON.stringify(this.links));
   }
 
   toggleMenu() {

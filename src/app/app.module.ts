@@ -17,6 +17,9 @@ import { GasBuddyComponent } from './gas-buddy/gas-buddy.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { CounterComponent } from './counter/counter.component';
+import { LitchfieldComponent } from './litchfield/litchfield.component';
+import { ObitsPageComponent } from './obits-page/obits-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     FlatRateRepairsComponent,
     GasBuddyComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    CounterComponent,
+    LitchfieldComponent,
+    ObitsPageComponent
   ],
   imports: [
     BrowserModule,

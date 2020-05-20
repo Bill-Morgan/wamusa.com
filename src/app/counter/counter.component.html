@@ -1,0 +1,7 @@
+<div>
+    <span *ngFor='let char of countArr'>
+        <span *ngIf='( countArr.length - getIndex()) % 3 == 0'>&nbsp;</span>
+        <img [src]='digitLookup[char]' />
+    </span>
+    <p>{{ message }}</p>
+</div>

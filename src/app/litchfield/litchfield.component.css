@@ -1,0 +1,35 @@
+p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+img {
+    width: 100%;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.white {
+    background-color: white;
+}
+
+.border {
+    border-style: double;
+    border-width: 5px;
+    border-color: black;
+}
+
+table {
+    width: 100%;
+    font-size: larger;
+}
