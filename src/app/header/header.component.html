@@ -1,15 +1,18 @@
-<div class='container'>
+<div class='container-fluid'>
     <div class='row'>
-        <app-h-menu></app-h-menu>
+        <div class='col-sm-3'></div>
+        <div class='col-sm-6 center'>
+            <img src='/assets/images/banners/wam.gif' height='175' />
+        </div>
+        <div class='col-sm-3'></div>
     </div>
     <div class='row'>
-        <div class='col-sm-12 center'>
-            <img src='/assets/images/banners/wam.gif' />
+        <div class='col-sm-10 left bottom'>
+            <app-h-menu></app-h-menu>
         </div>
-    </div>
-    <div class='row'>
-        <div class='col-sm-12 right'>
-            <button [class.brightButton]='buttonMouseOver' (mouseenter)='mouseEnter()' (mouseleave)='mouseLeave()' (click)='menuToggle()'>{{ menuOn ? 'Menu ^' : 'Menu v' }}</button>
-        </div>
+        <!-- <div class='col right bottom'>
+            <button [class.brightButton]='buttonMouseOver' (mouseenter)='mouseEnter()' (mouseleave)='mouseLeave()'
+                (click)='menuToggle()'>{{ menuOn ? 'Menu ^' : 'Menu v' }}</button>
+        </div> -->
     </div>
 </div>

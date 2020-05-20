@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AbsoluteSourceSpan } from '@angular/compiler';
+// import { AbsoluteSourceSpan } from '@angular/compiler';
+// import { link } from 'fs';
 
 @Component({
   selector: 'app-h-menu',
@@ -9,12 +10,12 @@ import { AbsoluteSourceSpan } from '@angular/compiler';
 export class HMenuComponent implements OnInit {
 
   headers: string[] = [];
-  displayButton = false;
+  displayButton = true;
   viewFlag = false;
   displayMenu: boolean[] = [];
 
   links = [ {
-    heading: 'WAM Computers',
+    heading: 'WAM Computers', url: 'http://www.wamcomputers.com',
     links: [ 
       {name: 'WAM Computers', url: 'http://www.wamcomputers.com'},
       {name: 'WAM Remote Support', url: 'http://www.wamcomputers.com/documents/remote_support.html'},
@@ -60,9 +61,12 @@ export class HMenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.displayMenu['menu'] = false;
     this.links.forEach(link => {
       this.displayMenu[link.heading] = false;
     });
+    console.log(JSON.stringify(this.links));
+
   }
 
   toggleMenu() {

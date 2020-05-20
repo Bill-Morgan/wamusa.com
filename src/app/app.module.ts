@@ -12,6 +12,11 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { McCovid19Component } from './alerts/mc-covid19/mc-covid19.component';
 import { HMenuComponent } from './h-menu/h-menu.component';
 import { DdMenuComponent } from './h-menu/dd-menu/dd-menu.component';
+import { FlatRateRepairsComponent } from './flat-rate-repairs/flat-rate-repairs.component';
+import { GasBuddyComponent } from './gas-buddy/gas-buddy.component';
+import { FooterComponent } from './footer/footer.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,10 +30,15 @@ import { DdMenuComponent } from './h-menu/dd-menu/dd-menu.component';
     AlertsComponent,
     McCovid19Component,
     HMenuComponent,
-    DdMenuComponent
+    DdMenuComponent,
+    FlatRateRepairsComponent,
+    GasBuddyComponent,
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

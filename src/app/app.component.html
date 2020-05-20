@@ -1,15 +1,26 @@
 <div class='container-fluid'>
   <div class='row'>
-    <div class='col-sm-12'>
-      <app-header [(menuOn)] = 'menuOn'></app-header>
+    <div class='col-lg-12'>
+      <app-header [(menuOn)]='menuOn'></app-header>
     </div>
   </div>
+  <br />
   <div class='row'>
     <div class='col'>
-      <app-homepage></app-homepage>
+      <!-- <app-homepage></app-homepage> -->
+      <router-outlet></router-outlet>
     </div>
-    <div *ngIf = 'menuOn' class='col-sm-3'>
+    <!-- <div *ngIf='menuOn' class='col-sm-3'>
       <app-v-menu></app-v-menu>
+    </div> -->
+  </div>
+</div>
+<br />
+<div class='container'>
+  <div class='row'>
+    <div class='col'>
+      <app-footer></app-footer>
     </div>
   </div>
 </div>
+<br />

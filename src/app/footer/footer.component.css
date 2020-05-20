@@ -1,0 +1,9 @@
+.container-fluid {
+    border-style: double;
+    border-width: 3px;
+    border-color: black;
+}
+
+.bold {
+    font-weight: bold;
+}

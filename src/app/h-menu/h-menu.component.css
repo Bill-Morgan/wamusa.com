@@ -1,13 +1,18 @@
 button {
     width: 150px;
-    background-color: yellow;
+    background-color: white;
 }
 
 .ddmenu {
-    background-color: yellow;
+    background-color: lightgrey;
     position: absolute;
     padding: 6px;
     border-style: solid;
     border-width: 2px;
     z-index: 1;
+}
+
+.brightButton {
+    background-color: lightgrey;
+    font-weight: bold;
 }
