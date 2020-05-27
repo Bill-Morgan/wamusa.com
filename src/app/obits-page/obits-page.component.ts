@@ -8,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class ObitsPageComponent implements OnInit {
 
   funeralHomes = [
-    {name: 'Plumer Funeral Home', img: 'assets/images/fh/p-fh.jpg'},
-    {name: ''}
+    {name: 'Plumer Funeral Home', 
+    img: 'assets/images/fh/p-fh.jpg', 
+    src: 'https://www.plummerfuneralservices.com/listings'}
   ]
+
+  currentPage;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.currentPage = this.funeralHomes[0];
+    console.log(this.currentPage);
   }
 
 }
