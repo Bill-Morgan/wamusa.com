@@ -1,0 +1,16 @@
+{
+    "banners": [
+        {
+            "comment": "WAM Computers",
+            "img": "/assets/images/banners/wam.gif",
+            "link": "http://www.wamcomputers.com",
+            "height": 175
+        },
+        {
+            "comment": "Big Dog Dare",
+            "img": "/assets/images/banners/bdd2020.jpg",
+            "height": 175,
+            "link": "#"
+        }
+    ]
+}

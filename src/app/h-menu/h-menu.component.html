@@ -1,8 +1,8 @@
 <div class='container'>
   <div class='row'>
-    <!-- <div>
+    <div>
       <button (mouseenter)='mouseEnter("menu")' (mouseleave)='mouseLeave("menu")' (click)='toggleMenu()' [class.brightButton]='displayMenu["menu"]'>Menu {{displayButton ? "<" : ">"}}</button>
-    </div> -->
+    </div>
     <div *ngFor='let link of links'>
       <span (mouseenter)='mouseEnter(link.heading)' (mouseleave)='mouseLeave(link.heading)'>
         <button *ngIf='displayButton' [class.brightButton]='displayMenu[link.heading]' >{{ link.heading }}</button>

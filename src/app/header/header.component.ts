@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import * as bannerData from "../../assets/data/banners.json"
 
 @Component({
   selector: 'app-header',
@@ -8,8 +9,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
 @Input() menuOn: boolean;
+
 @Output() menuOnChange = new EventEmitter();
 buttonMouseOver = false;
+banner = bannerData.banners[1
+]
 
   constructor() { }
 

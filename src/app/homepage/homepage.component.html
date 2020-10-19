@@ -4,10 +4,12 @@
             <a href="https://www.wunderground.com/webcams/WU_4888913/1/show.html">
                 <img id="downtown" alt="" [src]="picURL" height="338" width="600" /></a><br />
             <p>Live picture of North State Street, Litchfield (Updated:
-                <span>{{ timeStamp }}</span>)
+                <span>{{ timeStamp }}
+                    <a *ngIf='updateEnabled' href="#" (click)='stopUpdate()'>[Stop Updates]</a>
+                    <a *ngIf='!updateEnabled' href="#" (click)='startUpdate()'>[Start Updates]</a>
+                </span>)
             </p>
-            <!-- <button *ngIf='updateEnabled' (click)='stopUpdate()'>Stop Update</button>
-            <button *ngIf='!updateEnabled' (click)='startUpdate()'>Start Update</button> -->
+
         </div>
     </div>
     <div class='row'>

@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'wamusa-com';
-  menuOn = 'true'
+  menuOn = 'false';
+
+  constructor() { }
 }

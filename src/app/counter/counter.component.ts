@@ -29,7 +29,7 @@ export class CounterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  length(str: string) {
+  length(str: string): number {
     return str.length;
   }
 
