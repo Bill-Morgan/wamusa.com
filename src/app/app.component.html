@@ -6,11 +6,11 @@
   </div>
 </div>
 <div class='container-fluid content'>
-  <div *ngIf='menuOn; else menuOff' class='row '>
-    <div class='col-lg-10 top'>
+  <div class='row '>
+    <div class='col top'>
       <router-outlet></router-outlet>
     </div>
-    <div class="col-lg-2 top">
+    <div  *ngIf='menuOn' class="col-lg-2 right top">
       <app-v-menu></app-v-menu>
     </div>
   </div>

@@ -11,6 +11,72 @@
             "img": "/assets/images/banners/bdd2020.jpg",
             "height": 175,
             "link": "#"
+        },
+        {
+            "comment": "Bank & Trust Co",
+            "img": "/assets/images/banners/bnt.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "Lonnie Batherst",
+            "img": "/assets/images/banners/lbaf.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "Litchfield National Bank",
+            "img": "/assets/images/banners/lnb3.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/MemorialBears.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/nordic.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/pawscare.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/rcjets2019.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/sam.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/wam.gif",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/wamcc.jpg",
+            "height": 175,
+            "link": "#"
+        },
+        {
+            "comment": "",
+            "img": "/assets/images/banners/wamchecks.jpg",
+            "height": 175,
+            "link": "#"
         }
     ]
 }

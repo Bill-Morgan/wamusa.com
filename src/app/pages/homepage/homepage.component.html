@@ -1,8 +1,12 @@
 <div class='container-fluid'>
     <div class='row'>
         <div class='col center'>
-            <a href="https://www.wunderground.com/webcams/WU_4888913/1/show.html">
-                <img id="downtown" alt="" [src]="picURL" height="338" width="600" /></a><br />
+            <div>
+                <a href="https://www.wunderground.com/webcams/WU_4888913/1/show.html">
+                    <img id="downtown" alt="" [src]="picURL" [height]="imgHeight" [width]="imgWidth" /></a>
+                <a href="#" (click)="resizePhoto()">{{ photoSmall ? '>>>' : '<<<' }}</a>
+                <br />
+            </div>
             <p>Live picture of North State Street, Litchfield (Updated:
                 <span>{{ timeStamp }}
                     <a *ngIf='updateEnabled' href="#" (click)='stopUpdate()'>[Stop Updates]</a>

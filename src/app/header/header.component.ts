@@ -9,18 +9,19 @@ import * as bannerData from "../../assets/data/banners.json"
 export class HeaderComponent implements OnInit {
 
 @Input() menuOn: boolean;
+lgHeaderOn: boolean = true;
 
 @Output() menuOnChange = new EventEmitter();
 buttonMouseOver = false;
-banner = bannerData.banners[1
-]
+index = this.getRandomInt(0,bannerData.banners.length - 1);
+banner = bannerData.banners[this.index]
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  menuToggle() {
+  toggleMenu() {
     this.menuOn = !this.menuOn;
     this.menuOnChange.emit(this.menuOn);
   }
@@ -31,5 +32,15 @@ banner = bannerData.banners[1
 
   mouseLeave() {
     this.buttonMouseOver = false;
+  }
+
+  lgHeaderToggle() {
+    this.lgHeaderOn = !this.lgHeaderOn;
+  }
+
+  getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 }

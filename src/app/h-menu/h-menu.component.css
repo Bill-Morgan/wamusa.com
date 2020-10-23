@@ -1,6 +1,16 @@
-button {
+xxbutton {
     width: 150px;
     background-color: white;
+}
+
+
+button {
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px, 5px, 5px, 0px;
+    width: 150px;
 }
 
 .ddmenu {

@@ -3,18 +3,13 @@ img {
 }
 
 button {
-    background-color: yellow;
+    background-color: whitesmoke;
     border-color: black;
     border-radius: 10px;
     padding: 3px;
     margin: 5px;
     width: 150px;
 }
-
-/* button {
-    width: 150px;
-    background-color: white;
-} */
 
 .bottom {
     margin-bottom: 0px;
@@ -28,13 +23,9 @@ button {
 }
 
 .brightButton {
-    background-color: gold;
-}
-
-/* .brightButton {
     background-color: lightgrey;
     font-weight: bold;
-} */
+}
 
 .container-fluid {
     border-style: double;

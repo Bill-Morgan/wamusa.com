@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BannerAdComponent } from './banner-ad/banner-ad.component';
 import { VMenuComponent } from './v-menu/v-menu.component';
-import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { GsearchComponent } from './gsearch/gsearch.component';
 import { BuyComputerComponent } from './buy-computer/buy-computer.component';
@@ -18,8 +18,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CounterComponent } from './counter/counter.component';
-import { LitchfieldComponent } from './litchfield/litchfield.component';
-import { ObitsPageComponent } from './obits-page/obits-page.component';
+import { LitchfieldComponent } from './pages/litchfield/litchfield.component';
+import { ObitsPageComponent } from './pages/obits-page/obits-page.component';
 
 @NgModule({
   declarations: [

@@ -14,6 +14,9 @@ export class HomepageComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   source = interval(60000);
   updateEnabled = true;
+  photoSmall = true;
+  imgHeight = 338;
+  imgWidth = 600;
   
 
   constructor() { }
@@ -43,5 +46,17 @@ export class HomepageComponent implements OnInit, OnDestroy {
     this.updateImage();
     this.subscription = this.source.subscribe(() => this.updateImage());
     this.updateEnabled = true;
+  }
+
+  resizePhoto() {
+    if (this.photoSmall) {
+      this.photoSmall=false;
+      this.imgHeight = 592;
+      this.imgWidth = 1050;
+    } else {
+      this.photoSmall=true;
+      this.imgHeight = 338;
+      this.imgWidth = 600;
+    }
   }
 }

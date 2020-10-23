@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as data from '../../assets/data/fh.json'
+import * as data from '../../../assets/data/fh.json'
 
 @Component({
   selector: 'app-obits-page',
@@ -20,8 +20,8 @@ export class ObitsPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.currentPage = data.funeralHomes[0];
     this.funeralHomes = data.funeralHomes;
+    this.currentPage = this.funeralHomes[0];
     console.log(this.currentPage);
   }
 
