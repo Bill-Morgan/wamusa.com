@@ -15,15 +15,16 @@ export class GasBuddyComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) {}
 
-  testing1234 = data;
-  tabLen = this.testing1234.length;
+  testing1234;
 
   ngOnInit(): void {
-    // this.testing1234 = this.getPosts()
-    console.log(this.testing1234);
+    this.testing1234 = this.getPosts();
+    // this.tabLen = this.testing1234.length;
   }
 
   getPosts() {
-    return this.httpClient.get('https://jsonplaceholder.typicode.com/posts')
+    this.httpClient.get<any>('https://jsonplaceholder.typicode.com/posts').subscribe(data => {
+      this.testing1234 = data;
+    })
   }
 }

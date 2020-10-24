@@ -1,11 +1,21 @@
-<!-- Start GasBuddy Code -->
-<table width="100%">
-    <tr>
-        <td align="center" style="font-family:Times New Roman; font-weight:bold; font-size:16px;">Lowest Gas Prices
-            in the local area xx{{ tabLen }}xx</td>
-    </tr>
-    <tr *ngFor='let each in testing1234'>
-        <td>xxxx  {{ each }} xxxx</td>
-    </tr>
-</table>
-<!-- End GasBuddy Code -->
+<div class="container">
+    <table width="80%">
+        <tr>
+            <td colspan="3">Gas Prices in the local area</td>
+        </tr>
+        <tr *ngFor='let each of testing1234'>
+            <td>{{ each["id"] }}</td>
+            <td>{{ each['userId'] }}</td>
+            <td>
+                <table width='100%'>
+                    <tr>
+                        <td>{{ each['title'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ each['body'] }}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

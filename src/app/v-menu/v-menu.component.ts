@@ -10,7 +10,7 @@ import * as linkData from '../../assets/data/links.json';
 export class VMenuComponent implements OnInit {
 
   // @Input() links: {};
-  links = linkData["links"]
+  links = linkData["links"];
 
   constructor() { }
 
