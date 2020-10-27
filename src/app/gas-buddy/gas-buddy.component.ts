@@ -23,8 +23,12 @@ export class GasBuddyComponent implements OnInit {
   }
 
   getPosts() {
-    this.httpClient.get<any>('https://jsonplaceholder.typicode.com/posts').subscribe(data => {
+    // this.httpClient.get<any>('https://jsonplaceholder.typicode.com/posts').subscribe(data => {
+    //   this.testing1234 = data;
+    // })
+    this.httpClient.get<any>('//api.openweathermap.org/data/2.5/weather?id=4243131&appid=659ca79cbbb840dc37c220ee9a2f9989').subscribe(data => {
       this.testing1234 = data;
+      console.log(data);
     })
   }
 }
