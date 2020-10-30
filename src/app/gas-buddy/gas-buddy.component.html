@@ -1,21 +1,15 @@
 <div class="container">
     <table width="80%">
         <tr>
-            <td colspan="3">Gas Prices in the local area</td>
+            <td colspan="2">Gas Prices in the local area</td>
         </tr>
-        <tr *ngFor='let each of testing1234'>
-            <td>{{ each["id"] }}</td>
-            <td>{{ each['userId'] }}</td>
-            <td>
-                <table width='100%'>
-                    <tr>
-                        <td>{{ each }}</td>
-                    </tr>
-                    <!-- <tr>
-                        <td>{{ each['body'] }}</td>
-                    </tr> -->
-                </table>
-            </td>
+        <tr *ngFor='let key of getKeys(testing1234["main"])'>
+            <td>{{ key }}</td>
+            <td>{{ testing1234['main'][key] }}</td>
+        </tr>
+        <tr *ngFor='let key of getKeys(testing1234["sys"])'>
+            <td>{{ key }}</td>
+            <td>{{ testing1234['sys'][key] }}</td>
         </tr>
     </table>
 </div>
