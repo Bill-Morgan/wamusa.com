@@ -1,0 +1,15 @@
+<div class="container">
+    <table width="80%">
+        <tr>
+            <td colspan="2">Gas Prices in the local area</td>
+        </tr>
+        <tr *ngFor='let key of getKeys(testing1234["main"])'>
+            <td>{{ key }}</td>
+            <td>{{ testing1234['main'][key] }}</td>
+        </tr>
+        <tr *ngFor='let key of getKeys(testing1234["sys"])'>
+            <td>{{ key }}</td>
+            <td>{{ testing1234['sys'][key] }}</td>
+        </tr>
+    </table>
+</div>
